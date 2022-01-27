@@ -7,7 +7,7 @@ const bodyParser = require('koa-bodyparser')
 const logger = require('koa-logger')
 const parameter = require('koa-parameter')
 const moment = require('moment')
-const config = require('./config/index').mongodb
+const config = require('./config')
 // const getEurekaClient = require('./eureka')
 
 const admin = require('./routes/admin')
@@ -17,12 +17,14 @@ const rating = require('./routes/rating')
 const seller = require('./routes/seller')
 const upload = require('./routes/upload')
 
-// 数据库连接
-require('./config/connect')
+// 数据库连接(mongoose)
+// require('./config/connect')
+// 数据库连接(mongodb)
+require('./config/mongodb')
 // redis 连接
-require('./config/redis')
+// require('./config/redis')
 // 跨域处理
-require('./config/cors')
+// require('./config/cors')
 
 // error handler
 onerror(app)

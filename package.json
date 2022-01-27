@@ -31,7 +31,9 @@
     "lodash": "^4.17.21",
     "log4js": "^6.3.0",
     "moment": "^2.29.1",
+    "mongodb": "^4.3.1",
     "mongoose": "^6.0.12",
+    "mysql": "^2.18.1",
     "nodemailer": "^6.7.2",
     "pug": "^2.0.3",
     "redis": "^3.1.2",
@@ -43,6 +45,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.3",
     "koa-send": "^5.0.1",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "run-rs": "^0.7.6"
   }
 }

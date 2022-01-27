@@ -6,9 +6,9 @@ const config = require('./index').mongodb
 const URI = `mongodb://127.0.0.1:27017/${config.dbName}`
 mongoose.connect(URI, (err) => {
   if (err) {
-    console.log('CONNECT MONGODB ERROR:', err.message)
+    console.log('CONNECT MONGOOSE ERROR:', err.message)
     process.exit(1)
   } else {
-    console.log(`CONNECT MONGODB SUCCESS`)
+    console.log(`CONNECT MONGOOSE SUCCESS`)
   }
 })
